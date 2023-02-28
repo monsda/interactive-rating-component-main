@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    box-sizing: border-box;
+}
+
+.attribution{
+    display: none;
+}
+
+.rating-container{
+    display: grid;
+    place-items: center;
+    background-color: #262f38;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    margin-right: 33px;
+    cursor: pointer;
+    color: #737c86;
+}
+
+.rating-container.clicked{
+    color: white;
+    background-color: #7d8796;
+}
+
+.rating-container:hover{
+    background-color: #fe7512;
+    color: white;
+}
+
